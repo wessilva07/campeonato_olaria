@@ -6,7 +6,8 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <title>Zona da Mata Cup</title>
+    <title>Zona da Mata Cup - sub 17</title>
+    <link rel="icon" href="imagens/zona_mata.png">
     <!-- Bootstrap CSS -->
     <link
       rel="stylesheet"
@@ -23,67 +24,62 @@
     />
     <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+
+    <style>
+      /* Ajusta o tamanho das logos e a formatação dos nomes dos times */
+      .team-logo {
+        width: 100px; /* Tamanho uniforme para todas as logos */
+        height: 100px;
+        object-fit: cover; /* Mantém a proporção da imagem sem distorcer */
+      }
+
+      .team-name {
+        display: block; /* Garante que o nome do time esteja em uma nova linha */
+        margin-top: 0.5rem; /* Ajusta o espaçamento acima do nome */
+      }
+
+      ul.list-unstyled {
+        padding: 0;
+        margin: 0;
+      }
+
+      ul.list-unstyled li {
+        margin: 0 auto;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+    </style>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-        <div class="container">
-          <img
-            src="imagens/zona_mata.png"
-            width="200"
-            height="200"
-            alt="Logo"
-            class="ml-auto d-none d-lg-block"
-          />
-          <a class="navbar-brand" href="#">Zona da Mata Cup</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#nav-principal"
-            aria-controls="nav-principal"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="nav-principal">
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-toggle="dropdown"
-                  aria-haspopup="true"
-                  aria-expanded="false"
-                >
-                  Categorias
-                </a>
-                <div
-                  class="dropdown-menu bg-dark"
-                  aria-labelledby="navbarDropdown"
-                >
-                  <a class="dropdown-item text-white bg-dark" href="sub_13.html"
-                    >Sub 13</a
-                  >
-                  <a class="dropdown-item text-white bg-dark" href="sub_15.html"
-                    >Sub 15</a
-                  >
-                  <a class="dropdown-item text-white bg-dark" href="sub_17.html"
-                    >Sub 17</a
-                  >
-                </div>
-              </li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+          <div class="container">
+            <img src="imagens/zona_mata.png" width="200" height="200" alt="Logo" class="d-none d-lg-block">
+            <a class="navbar-brand" href="#">Zona da Mata Cup</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#nav-principal" aria-controls="nav-principal" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav-principal">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link nav-link-large" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-large" href="sub_13.html">Sub 13</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-large" href="sub_15.html">Sub 15</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-large" href="sub_17.html">Sub 17</a>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
-      </nav>
-    </header>
+        </nav>
+      </header>
 
     <section class="container mt-3">
       <h1 class="text-center">Times Sub 17</h1>
@@ -124,68 +120,74 @@
               <th class="align-top">
                 <h1 class="mb-4">Chave A</h1>
                 <ul class="list-unstyled d-flex flex-column align-items-center">
-                  <li class="mb-3 pb-2 text-center position-relative">
+                  <li class="mb-3 text-center">
                     <img
                       src="imagens/logo_pref_olaria.png"
                       alt="Logo Olaria"
-                      class="mr-3"
+                      class="team-logo"
                     />
-                    <span class="mt-2">Olaria</span>
+                    <span class="team-name">Olaria</span>
                   </li>
-                  
-                  <li class="mb-3 pb-2 text-center position-relative">
+                  <li class="mb-3 text-center">
                     <img
                       src="imagens/elite.jpeg"
                       alt="Logo Time Elite Union"
-                      class="mr-3"
-                      style="width: 100px; height: 100px"
+                      class="team-logo"
                     />
-                    <span class="mt-2">Elite Union</span>
-
+                    <span class="team-name">Elite Union</span>
                   </li>
-                  <li class="mb-3 pb-2 text-center position-relative">
-                    <img src="imagens/dl.png" alt="Logo Time DL" class="mr-3" />
-                    <span class="mt-2">DL 10 Sports</span>
+                  <li class="mb-3 text-center">
+                    <img
+                      src="imagens/dl.png"
+                      alt="Logo Time DL"
+                      class="team-logo"
+                    />
+                    <span class="team-name">DL 10 Sports</span>
                   </li>
-
-                </li>
-                <li class="mb-3 pb-2 text-center position-relative">
-                  <img src="imagens/guanabara.jpeg" alt="Logo Time DL" class="mr-3" />
-                  <span class="mt-2">Guanabara</span>
-                </li>
+                  <li class="mb-3 text-center">
+                    <img
+                      src="imagens/guanabara.jpeg"
+                      alt="Logo Time Guanabara"
+                      class="team-logo"
+                    />
+                    <span class="team-name">Guanabara</span>
+                  </li>
                 </ul>
               </th>
-
               <th class="align-top">
                 <h1 class="mb-4">Chave B</h1>
                 <ul class="list-unstyled d-flex flex-column align-items-center">
-                  <li class="mb-3 pb-2 text-center position-relative">
+                  <li class="mb-3 text-center">
                     <img
                       src="imagens/eca.png"
                       alt="Logo Time Atalanta"
-                      class="mr-3"
+                      class="team-logo"
                     />
-                    <span class="mt-2">Atalanta</span>
+                    <span class="team-name">Atalanta</span>
                   </li>
-                  <li class="mb-3 pb-2 text-center position-relative">
-                    <img src="imagens/renascer.jpeg" alt="Logo Time DL" class="mr-3" />
-                    <span class="mt-2">Renascer</span>
+                  <li class="mb-3 text-center">
+                    <img
+                      src="imagens/renascer.jpeg"
+                      alt="Logo Time Renascer"
+                      class="team-logo"
+                    />
+                    <span class="team-name">Renascer</span>
                   </li>
-                  <li class="mb-3 pb-2 text-center position-relative">
+                  <li class="mb-3 text-center">
                     <img
                       src="imagens/avjr.png"
-                      alt="Logo Time Aston"
-                      class="mr-3"
+                      alt="Logo Time Aston Vila"
+                      class="team-logo"
                     />
-                    <span class="mt-2">Aston Vila</span>
+                    <span class="team-name">Aston Vila</span>
                   </li>
-                  <li class="mb-3 mt-3 pb-2 text-center position-relative">
+                  <li class="mb-3 text-center">
                     <img
                       src="imagens/mec.png"
-                      alt="Logo Time MEC"
-                      class="mr-3"
+                      alt="Logo Time Minas Esporte"
+                      class="team-logo"
                     />
-                    <span class="mt-2">Minas Esporte</span>
+                    <span class="team-name">Minas Esporte</span>
                   </li>
                 </ul>
               </th>
@@ -198,6 +200,7 @@
       </div>
     </section>
 
+    <!--
     <section class="container mt-3 text-center">
       <h1>Classificação</h1>
       <h2>Grupo A</h2>
@@ -332,261 +335,151 @@
         </table>
       </div>
     </section>
-    
-<!--Chave A Inicio-->
+-->
+
+    <!--Chave A Inicio-->
 
     <section class="container mt-3 text-center">
       <div class="table-responsive mt-3">
         <h2>Confrontos Grupo A</h2>
-        <table class="table table-bordered">
-          <thead>
+        <table class="table table-striped table-bordered">
+          <thead class="thead-dark">
             <tr>
               <th>Dia</th>
-              <th>Horario</th>
+              <th>Horário</th>
               <th>Local</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>
-                <ul class="list-unstyled">
-                  <li>29/07/2024</li>
-                  <li class="mt-2">Olaria vs Elite Union</li>
-                </ul>
-              </td>
-              <td>
-                <ul class="list-unstyled">
-                  <li>08:00 hrs</li>
-                </ul>
-              </td>
-              <td>
-                <ul class="list-unstyled">
-                  <li>Olaria</li>
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-          <tbody>
-            <tr>
-              <td>
-                <ul class="list-unstyled">
-                  <li>29/07/2024</li>
-                  <li class="mt-2">DL 10 Sports vs Guanabara</li>
-                </ul>
-              </td>
-              <td>
-                <ul class="list-unstyled">
-                  <li>15:00 hrs</li>
-                </ul>
-              </td>
-              <td>
-                <ul class="list-unstyled">
-                  <li>Olaria</li>
-                </ul>
-              </td>
-            </tr>
-          </tbody>
 
-          <tbody>
-            <tr>
-              <td>
-                <ul class="list-unstyled">
-                  <li>30/07/2024</li>
-                  <li class="mt-2">Elite Union vs DL 10 Sports</li>
-                </ul>
+                </figure>
+                <strong>29/07/2024</strong><br />
+                Olaria vs Elite Union
               </td>
-              <td>
-                <ul class="list-unstyled">
-                  <li>10:20 hrs</li>
-                </ul>
-              </td>
-              <td>
-                <ul class="list-unstyled">
-                  <li>Olaria</li>
-                </ul>
-              </td>
+              <td>08:00 hrs</td>
+              <td>Olaria</td>
             </tr>
-          </tbody>
-
-          <tbody>
             <tr>
               <td>
-                <ul class="list-unstyled">
-                  <li>30/07/2024</li>
-                  <li class="mt-2">Olaria vs Guanabara</li>
-                </ul>
+                
+                <strong>29/07/2024</strong><br />
+                DL 10 Sports vs Guanabara
               </td>
-              <td>
-                <ul class="list-unstyled">
-                  <li>15:00 hrs</li>
-                </ul>
-              </td>
-              <td>
-                <ul class="list-unstyled">
-                  <li>Olaria</li>
-                </ul>
-              </td>
+              <td>15:00 hrs</td>
+              <td>Olaria</td>
             </tr>
-          </tbody>
-
-          <tbody>
             <tr>
               <td>
-                <ul class="list-unstyled">
-                  <li>31/07/2024</li>
-                  <li class="mt-2">Elite vs Guanabara</li>
-                </ul>
+                
+                <strong>30/07/2024</strong><br />
+                Elite Union vs DL 10 Sports
               </td>
+              <td>10:20 hrs</td>
+              <td>Olaria</td>
+            </tr>
+            <tr>
               <td>
-                <ul class="list-unstyled">
-                  <li>16:50 hrs</li>
-                </ul>
+                <figure class="team-logo">               
+                <strong>30/07/2024</strong><br />
+                Olaria vs Guanabara
               </td>
+              <td>15:00 hrs</td>
+              <td>Olaria</td>
+            </tr>
+            <tr>
               <td>
-                <ul class="list-unstyled">
-                  <li>Minas</li>
-                </ul>
+                <strong>31/07/2024</strong><br />
+                Elite vs Guanabara
               </td>
+              <td>16:50 hrs</td>
+              <td>Minas</td>
             </tr>
           </tbody>
         </table>
       </div>
     </section>
 
-    <!--Fim Chave A e Inicio Chave B-->
+    <!-- Fim Chave A e Início Chave B -->
 
     <section class="container mt-3 text-center">
       <div class="table-responsive mt-3">
         <h2>Confrontos Grupo B</h2>
-        <table class="table table-bordered">
-          <thead>
+        <table class="table table-striped table-bordered">
+          <thead class="thead-dark">
             <tr>
               <th>Dia</th>
-              <th>Horario</th>
+              <th>Horário</th>
               <th>Local</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>
-                <ul class="list-unstyled">
-                  <li>29/07/2024</li>
-                  <li class="mt-2">Atalanta vs Aston</li>
-                </ul>
+                <strong>29/07/2024</strong><br />
+                Atalanta vs Aston
               </td>
-              <td>
-                <ul class="list-unstyled">
-                  <li>11:30 hrs</li>
-                </ul>
-              </td>
-              <td>
-                <ul class="list-unstyled">
-                  <li>Olaria</li>
-                </ul>
-              </td>
+              <td>11:30 hrs</td>
+              <td>Olaria</td>
             </tr>
-          </tbody>
-          <tbody>
             <tr>
               <td>
-                <ul class="list-unstyled">
-                  <li>29/07/2024</li>
-                  <li class="mt-2">Minas vs Renascer</li>
-                </ul>
+                <strong>29/07/2024</strong><br />
+                Minas vs Renascer
               </td>
-              <td>
-                <ul class="list-unstyled">
-                  <li>15:40 hrs</li>
-                </ul>
-              </td>
-              <td>
-                <ul class="list-unstyled">
-                  <li>Minas</li>
-                </ul>
-              </td>
+              <td>15:40 hrs</td>
+              <td>Minas</td>
             </tr>
-          </tbody>
-          <tbody>
             <tr>
               <td>
-                <ul class="list-unstyled">
-                  <li>30/07/2024</li>
-                  <li class="mt-2">Aston vs Renascer</li>
-                </ul>
+                <strong>30/07/2024</strong><br />
+                Aston vs Renascer
               </td>
-              <td>
-                <ul class="list-unstyled">
-                  <li>13:00 hrs</li>
-                </ul>
-              </td>
-              <td>
-                <ul class="list-unstyled">
-                  <li>Olaria</li>
-                </ul>
-              </td>
+              <td>13:00 hrs</td>
+              <td>Olaria</td>
             </tr>
-          </tbody>
-
-          <tbody>
             <tr>
               <td>
-                <ul class="list-unstyled">
-                  <li>31/07/2024</li>
-                  <li class="mt-2">Atalanta vs Renascer</li>
-                </ul>
+                <strong>31/07/2024</strong><br />
+                Atalanta vs Renascer
               </td>
-              <td>
-                <ul class="list-unstyled">
-                  <li>10:20 hrs</li>
-                </ul>
-              </td>
-              <td>
-                <ul class="list-unstyled">
-                  <li>Olaria</li>
-                </ul>
-              </td>
+              <td>10:20 hrs</td>
+              <td>Olaria</td>
             </tr>
-          </tbody>
-
-          <tbody>
             <tr>
               <td>
-                <ul class="list-unstyled">
-                  <li>31/07/2024</li>
-                  <li class="mt-2">Minas vs Aston</li>
-                </ul>
+                <strong>31/07/2024</strong><br />
+                Minas vs Aston
               </td>
-              <td>
-                <ul class="list-unstyled">
-                  <li>18:00 hrs</li>
-                </ul>
-              </td>
-              <td>
-                <ul class="list-unstyled">
-                  <li>Minas</li>
-                </ul>
-              </td>
+              <td>18:00 hrs</td>
+              <td>Minas</td>
             </tr>
           </tbody>
         </table>
       </div>
     </section>
-    
 
-    <footer class="bg-dark text-light py-4 text-center">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <h3>Zona da Mata Cup</h3>
-            <h5>Apoio</h5>
-            <ul class="list-unstyled">
-              <img src="imagens/logo_pref_olaria.png" class="mb-2" alt="" />
-              <img src="imagens/pmmg.png" width="180" height="180" alt="" />
-            </ul>
+    <footer class="bg-dark text-light py-4 text-center mt-3">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-12">
+              <h3>Zona da Mata Cup</h3>
+              <h5>Apoio</h5>
+              <ul class="index list-unstyled d-flex justify-content-center">
+                <li><img src="imagens/logo_pref_olaria.png" alt="Logo 1"></li>
+                <li><img src="imagens/pmmg.png" alt="Logo 2"></li>
+                <li><img src="imagens/aconchego_hamburgueria.jpeg" alt="Logo 4"></li>
+                <li class="logo text-center">
+                  <h1 class="logo-name">Mizael Gesso</h1>
+                  <p class="logo-phone">Tel: 99803-7479</p>
+                </li>
+                <li><img src="imagens/tanaka.jpg" alt="Logo 3"></li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
